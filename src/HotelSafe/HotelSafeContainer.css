@@ -1,0 +1,5 @@
+.hotel-safe-container {
+  background-color: slategray;
+  display: flex;
+  border: 1px solid black;
+}
