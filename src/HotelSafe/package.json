@@ -1,0 +1,5 @@
+{
+  "name": "HotelSafe",
+  "privte": true,
+  "main": "./HotelSafeContainer.jsx"
+}

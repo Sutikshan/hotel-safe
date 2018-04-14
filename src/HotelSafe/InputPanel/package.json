@@ -1,0 +1,5 @@
+{
+  "name": "InputPanel",
+  "privte": true,
+  "main": "./InputPanel.jsx"
+}
