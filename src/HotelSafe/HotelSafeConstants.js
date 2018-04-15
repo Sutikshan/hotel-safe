@@ -1,6 +1,6 @@
-export const CLR_ALL_CODE = -4;
+export const CLR_ALL_CODE = "Delete";
 
-export const CLR_BACK_SPACE = -1;
+export const CLR_BACK_SPACE = "Backspace";
 
 export const PIN_CODE_LENGTH = 4;
 
@@ -23,6 +23,13 @@ export const BUTTON_SET = [
 ];
 
 export const INDICATOR_STATUS = {
-  UNLOCK: "lightgreen",
-  LOCK: "red"
+  unlock: "lightgreen",
+  lock: "red",
+  error: "red"
+};
+
+export const HotelMachineStates = {
+  LOCK: "lock",
+  UNLOCK: "unlock",
+  ERROR: "error"
 };

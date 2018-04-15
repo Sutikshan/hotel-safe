@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { BUTTON_SET } from "../HotelSafeConstants";
-import "./InputPanel.css";
 
 class InputPanel extends Component {
   render() {
@@ -25,6 +24,7 @@ class InputPanel extends Component {
 }
 
 InputPanel.propTypes = {
-  onButtonClick: PropTypes.func
+  onButtonClick: PropTypes.func.isRequired
 };
+
 export default InputPanel;

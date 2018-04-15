@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "eslintConfig": {
-    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
     "parserOptions": {
-      "ecmaVersion": 6,
+      "ecmaVersion": 2018,
       "sourceType": "module",
       "ecmaFeatures": {
         "jsx": true
@@ -14,6 +17,11 @@
     "env": {
       "browser": true,
       "node": true
+    },
+    "globals": {
+      "it": true,
+      "define": true,
+      "expect": true
     }
   },
   "dependencies": {
@@ -28,6 +36,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.7.0"
   }
