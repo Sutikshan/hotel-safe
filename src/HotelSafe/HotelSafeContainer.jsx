@@ -4,7 +4,6 @@ import DisplayPanel from "./DisplayPanel";
 import {
   defaultState,
   pinSubmissionAction,
-  backSpaceKeyPress,
   onDigitEntry,
   clearPin
 } from "./hotelSafeMachine";
@@ -21,15 +20,6 @@ class HotelSafeContainer extends Component {
     };
 
     this.onInput = this.onInput.bind(this);
-    this.onKeyUp = this.onKeyUp.bind(this);
-  }
-
-  componentWillMount() {
-    document.addEventListener("keyup", this.onKeyUp);
-  }
-
-  onKeyUp(event) {
-    this.onInput(event.key);
   }
 
   onInput(input) {
@@ -41,9 +31,6 @@ class HotelSafeContainer extends Component {
       case "Delete":
         this.setState(clearPin);
         return;
-      case "Backspace":
-        this.setState(backSpaceKeyPress);
-        return;
       default:
         this.setState(state => onDigitEntry(state, input));
     }
@@ -51,7 +38,7 @@ class HotelSafeContainer extends Component {
 
   render() {
     return (
-      <div className="hotel-safe-container" onKeyUp={this.onKeyUp}>
+      <div className="hotel-safe-container">
         <InputPanel onButtonClick={this.onInput} />
         <DisplayPanel
           displayText={this.state.pinCode}
@@ -59,10 +46,6 @@ class HotelSafeContainer extends Component {
         />
       </div>
     );
-  }
-
-  componentWillUnMount() {
-    document.removeEventListener("keyup", this.onKeyUp);
   }
 }
 

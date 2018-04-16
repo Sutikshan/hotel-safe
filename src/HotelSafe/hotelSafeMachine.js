@@ -22,14 +22,6 @@ export const pinSubmissionAction = state => {
   return { hotelMachineState: HotelMachineStates.ERROR, ...clearPin() };
 };
 
-export const backSpaceKeyPress = state => {
-  if (!state.pinCode) {
-    return state;
-  }
-
-  return { pinCode: state.pinCode.slice(0, -1) };
-};
-
 export const onDigitEntry = (state, input) => {
   if (!isDigit(input)) {
     return null;

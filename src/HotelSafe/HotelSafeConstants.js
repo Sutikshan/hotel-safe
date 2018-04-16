@@ -1,6 +1,6 @@
 export const CLR_ALL_CODE = "Delete";
 
-export const CLR_BACK_SPACE = "Backspace";
+export const ENTER_KEY = "Enter";
 
 export const PIN_CODE_LENGTH = 4;
 
@@ -19,7 +19,7 @@ export const BUTTON_SET = [
 
   { label: "CLR", value: CLR_ALL_CODE },
   { label: "0", value: 0 },
-  { label: "»", value: CLR_BACK_SPACE }
+  { label: "↵", value: ENTER_KEY }
 ];
 
 export const INDICATOR_STATUS = {
