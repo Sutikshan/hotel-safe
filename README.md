@@ -1,4 +1,4 @@
 # hotel-safe
 
-Hotel Safe App Created for IAG Technical Test
 React - State Machine
+Simple Create App with eslint configuraiton 
